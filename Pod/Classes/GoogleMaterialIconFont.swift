@@ -21,7 +21,7 @@ public extension NSString {
 }
 
 public extension UIFont {
-    private static let fontLoaderHandler: (String) -> Void = {
+    fileprivate static let fontLoaderHandler: (String) -> Void = {
         FontLoader.loadFont($0)
     }
     
